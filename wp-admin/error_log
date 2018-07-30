@@ -1,0 +1,10 @@
+[04-May-2018 00:31:19 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/dogotinh/public_html/wp-content/themes/flatsome-child/functions.php on line 18
+[04-May-2018 00:37:48 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/dogotinh/public_html/wp-content/themes/flatsome-child/functions.php on line 18
+[04-May-2018 14:46:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to UxBuilder\Post\Post::__construct() must be an instance of WP_Post, null given in /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Post/Post.php:14
+Stack trace:
+#0 [internal function]: UxBuilder\Post\Post->__construct(NULL)
+#1 /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Services/Container.php(76): ReflectionClass->newInstanceArgs(Array)
+#2 /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Application.php(69): UxBuilder\Services\Container->create('UxBuilder\\Post\\...', Array)
+#3 /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Services/Container.php(18): UxBuilder\Application->UxBuilder\{closure}(Object(UxBuilder\Services\Container))
+#4 /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Application.php(71): UxBuilder\Services\Container->service('current-post', Object(Closure))
+#5 /home/dogotinh/public_html in /home/dogotinh/public_html/wp-content/themes/flatsome/inc/builder/core/server/src/Post/Post.php on line 14
